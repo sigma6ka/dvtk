@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Документы</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body class="docs-page">
+		<div class="layout">
+			<div class="sidebar-navigation">
+				<aside class="sidebar">
+					<div class="sidebar__content">
+						<!-- burger menu -->
+						<div class="sidebar__nav-btn">
+							<svg class="icon burger-menu">
+								<use href="./img/svgsprite/sprite.symbol.svg#burger-menu"></use>
+							</svg>
+							<div class="triangle-menu">
+								<svg class="icon triangle-menu">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-menu"></use>
+								</svg>
+							</div>
+						</div>
+						<!-- navigation -->
+						<nav class="sidebar__nav sidebar-menu">
+							<ul class="sidebar-menu__list">
+								<li class="sidebar-menu__item">
+									<a href="./../../index.html" class="sidebar-menu__link main-page">
+										<svg class="icon _nav home-ico">
+											<use href="./img/svgsprite/sprite.symbol.svg#home-ico"></use>
+										</svg>
+									</a>
+									<span>
+										Главная
+									</span>
+								</li>
+								<li class="sidebar-menu__item">
+									<a href="./../../intelligence.html" class="sidebar-menu__link intelligence-page">
+										<svg class="icon _nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#intelligence-ico"></use>
+										</svg>
+									</a>
+									<span>
+										Основные сведения
+									</span>
+								</li>
+								<li class="sidebar-menu__item">
+									<a href="./../../documents.html" class="sidebar-menu__link docs-page">
+										<svg class="icon _nav docs">
+											<use href="./img/svgsprite/sprite.symbol.svg#docs"></use>
+										</svg>
+									</a>
+									<span>Документы</span>
+								</li>
+								<li class="sidebar-menu__item">
+									<a href="./../../news.html" class="sidebar-menu__link">
+										<svg class="icon _nav education">
+											<use href="./img/svgsprite/sprite.symbol.svg#education"></use>
+										</svg>
+									</a>
+									<span>Образование</span>
+								</li>
+								<li class="sidebar-menu__item">
+									<a href="#!" class="sidebar-menu__link">
+										<svg class="icon _nav administration">
+											<use href="./img/svgsprite/sprite.symbol.svg#administration"></use>
+										</svg>
+									</a>
+									<span>Руководство</span>
+								</li>
+							</ul>
+						</nav>
+						<nav class="sidebar__nav sidebar-menu">
+							<ul class="sidebar-menu__list">
+								<li class="sidebar-menu__item">
+									<a href="#!" class="sidebar-menu__link">
+										<svg class="icon _nav wk">
+											<use href="./img/svgsprite/sprite.symbol.svg#wk"></use>
+										</svg>
+									</a>
+									<span>Мы&#160;в&#160;Вконтакте</span>
+								</li>
+								<li class="sidebar-menu__item">
+									<a href="#!" class="sidebar-menu__link">
+										<svg class="icon _nav telegram">
+											<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+										</svg>
+									</a>
+									<span>Мы&#160;в&#160;Telegram</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</aside>
+			</div>
+			<div class="wrapper">
+				<header class="header">
+					<div class="header__content">
+						<div class="sidebar__nav-btn _header">
+							<svg class="icon burger-menu">
+								<use href="./img/svgsprite/sprite.symbol.svg#burger-menu"></use>
+							</svg>
+							<div class="triangle-menu">
+								<svg class="icon triangle-menu">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-menu"></use>
+								</svg>
+							</div>
+						</div>
+						<a href="./../../index.html" class="header__logo">
+							<img class="header__logo-text" src="./img/logo.svg" alt="" />
+							<img class="header__logo-without-text" src="./img/logo-without-text.svg" alt="" />
+						</a>
+						<!-- <div class="header__logo">
+		</div> -->
+						<div class="header__search">
+							<div class="header__search-ico">
+								<svg class="icon _header-icons search-ico">
+									<use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+								</svg>
+							</div>
+							<div class="header__search-text">Найти&#8230;</div>
+						</div>
+						<div class="header__item">
+							<svg class="icon _header-icons visually-impaired">
+								<use href="./img/svgsprite/sprite.symbol.svg#visually-impaired"></use>
+							</svg>
+						</div>
+						<div class="header__item _mail">
+							<svg class="icon _header-icons mail">
+								<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+							</svg>
+						</div>
+						<div class="header__item">
+							<svg class="icon _header-icons phone-call">
+								<use href="./img/svgsprite/sprite.symbol.svg#phone-call"></use>
+							</svg>
+						</div>
+					</div>
+				</header>
+				<div class="mobile-nav">
+					<nav class="mobile-nav__menu menu">
+						<ul class="menu__list">
+							<a href="./../../index.html" class="menu__item _active">
+								<div class="menu__link _active">
+									<svg class="icon _nav home-ico">
+										<use href="./img/svgsprite/sprite.symbol.svg#home-ico"></use>
+									</svg>
+								</div>
+								<div class="menu__item-text">Главная</div>
+							</a>
+							<a href="./../../intelligence.html" class="menu__item">
+								<div class="menu__link _active">
+									<svg class="icon _nav intelligence-ico">
+										<use href="./img/svgsprite/sprite.symbol.svg#intelligence-ico"></use>
+									</svg>
+								</div>
+								<div class="menu__item-text">Основные сведения</div>
+							</a>
+							<a href="./../../documents.html" class="menu__item">
+								<div class="menu__link _active">
+									<svg class="icon _nav docs">
+										<use href="./img/svgsprite/sprite.symbol.svg#docs"></use>
+									</svg>
+								</div>
+								<div class="menu__item-text">Документы</div>
+							</a>
+							<a href="./../../news.html" class="menu__item">
+								<div class="menu__link _active">
+									<svg class="icon _nav education">
+										<use href="./img/svgsprite/sprite.symbol.svg#education"></use>
+									</svg>
+								</div>
+								<div class="menu__item-text">Образование</div>
+							</a>
+							<a href="#!" class="menu__item">
+								<div class="menu__link _active">
+									<svg class="icon _nav administration">
+										<use href="./img/svgsprite/sprite.symbol.svg#administration"></use>
+									</svg>
+								</div>
+								<div class="menu__item-text">Руководство</div>
+							</a>
+						</ul>
+					</nav>
+					<div class="mobile-nav-box">
+						<div class="mobile-nav__mail">
+							<a href="#!" class="mobile-nav__mail-link">
+								<svg class="icon _header-icons mail">
+									<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+								</svg>
+								<div>info@dvtk.info</div>
+							</a>
+						</div>
+						<ul class="mobile-nav__list">
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>Сведения об&#160;организации</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>ФП&#160;&#171;Профессионалитет&#187;</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>Методическая служба</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>Студентам</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>ЭИОС</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="mobile-nav__list-title">
+									<p>Поступающим</p>
+									<div class="mobile-nav__list-title-btn">
+										<svg class="icon arrow-menu-nav">
+											<use href="./img/svgsprite/sprite.symbol.svg#arrow-menu-nav"></use>
+										</svg>
+									</div>
+								</div>
+								<ul class="mobile-nav__sub-list">
+									<li>
+										<a href="#!">Структура и&#160;органы управления образовательной организацией</a>
+									</li>
+									<li>
+										<a href="#!">Материально-техническое обеспечение о&#160;оснащенность</a>
+									</li>
+									<li><a href="#!">Платные образовательные услуги</a></li>
+									<li><a href="#!">Финансово-хозяйственная деятельность</a></li>
+									<li>
+										<a href="#!">Вакантные места для приема (перевода) обучающихся</a>
+									</li>
+									<li><a href="#!">Доступная среда</a></li>
+									<li><a href="#!">Международное сотрудничество</a></li>
+									<li><a href="#!">Образовательные стандарты и&#160;требования</a></li>
+									<li><a href="#!">Стипендии и&#160;меры поддержки обучающихся</a></li>
+									<li>
+										<a href="#!">Организация питания в&#160;образовательной организации</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Работодателям</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Мероприятия</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Обратная связь</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Государственное задание</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Антикоррупция</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!" class="mobile-nav__list-title-link">
+									<span>Профилактика экстремизма и&#160;терроризма</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mobile-nav-foreground"></div>
+
+				<main class="page">
+					<section class="page__docs-content docs-content">
+						<div class="page__container">
+							<h2 class="docs-content__title _title-2">
+								<div class="figure-title"></div>
+								<div>Документы</div>
+							</h2>
+							<div class="docs-content__docs">
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">
+										Лицензии на&#160;осуществление образовательной деятельности, выписки из&#160;реестра лицензий и&#160;Свидетельства
+									</div>
+									<a href="#!" class="docs-content__doc-link">Приказ о&#160;внесении изменений в&#160;реестр лицензий</a>
+									<a href="#!" class="docs-content__doc-link">Выписка из&#160;реестра лицензий</a>
+									<a href="#!" class="docs-content__doc-link">Уведомление о&#160;внесении изменений в&#160;реестр лицензий</a>
+									<a href="#!" class="docs-content__doc-link">Свидетельство о&#160;государственной аккредитации</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Устав образовательной организации</div>
+									<a href="#!" class="docs-content__doc-link">Устав от&#160;16.01.2023&#160;г.</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Программа Популяризации</div>
+									<a href="#!" class="docs-content__doc-link">Программа популяризации ФП&#160;&#171;Профессионалитет&#187; в&#160;Приморском крае</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Программа развития</div>
+									<a href="#!" class="docs-content__doc-link">Программа развития КГА ПОУ ДВТК&#187;</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Реализация программ</div>
+									<a href="#!" class="docs-content__doc-link">Реализация программы воспитания в&#160;2022-2023 учебном году</a>
+									<a href="#!" class="docs-content__doc-link">Реализация программы воспитания в&#160;2021-2022 учебном году</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Документы о&#160;порядке оказания платных образовательных услуг</div>
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;снижении стоимости платных образовательных услуг</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Дополнительное образование для студентов колледжа</div>
+									<a href="#!" class="docs-content__doc-link">Приказ об&#160;утверждении форм договора</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Образец договора на&#160;обучение по&#160;образовательным программам среднего профессионального образования</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ &#171;Об&#160;утверждении формы договора об&#160;образовании на&#160;обучение по&#160;образовательным программам СПО
+										по&#160;специальности &#8222;Правоохранительная деятельность&#8220;</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ № 72-КП от&#160;02.10.2019&#160;г. &#8222;Об&#160;утверждении формы договора об&#160;оказании платных образовательных услуг
+										по&#160;программе профессионального обучения &#8222;Водитель автомобиля категории &#8222;B"</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ № 47-КП от&#160;06.06.2018&#160;г. &#171;Об&#160;утверждении формы договора об&#160;образовании на&#160;обучение
+										по&#160;дополнительным образовательным программам&#187;</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Образец договора об&#160;образовании на&#160;обучение по&#160;дополнительным образовательным программам</a
+									>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Приказы</div>
+									<a href="#!" class="docs-content__doc-link">Приказ &#171;о&#160;звонках&#187;</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ &#171;Об&#160;утверждении форм договора об&#160;оказании дополнительных образовательных услуг&#187;</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ &#171;Об&#160;утверждении форм договора об&#160;образовании на&#160;обучение по&#160;программам среднего профессионального образования
+										по&#160;специальности правоохранительная деятельность&#187;</a
+									>
+									<a href="#!" class="docs-content__doc-link"
+										>Приказ &#171;Об&#160;утверждении форм договора об&#160;образовании на&#160;обучение по&#160;программам среднего профессионального
+										образования&#187;</a
+									>
+									<a href="#!" class="docs-content__doc-link">Приказ &#171;об&#160;изменении режима занятий&#187;</a>
+									<a href="#!" class="docs-content__doc-link">Приказ &#171;об&#160;особенностях организации работы колледжа в&#160;2020-2021 учебном году&#187;</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Положения</div>
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;приемной комиссии от&#160;25.01.2023&#160;г.</a>
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;стипендиальном обеспечении от&#160;31.01.2023&#160;г.</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Положение о&#160;защите конфиденциальной информации при проведении социально-психологического тестирования от&#160;01.09.2022&#160;г.</a
+									>
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;классном руководстве от&#160;01.09.2021&#160;г.</a>
+									<a href="#!" class="docs-content__doc-link">Положение об&#160;условии обучения инвалидов от&#160;01.09.2021&#160;г.</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Положение об&#160;обработке и&#160;защите персональных данных сотрудников и&#160;студентов от&#160;01.09.2021&#160;г.</a
+									>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Публичные доклады</div>
+									<a href="#!" class="docs-content__doc-link">ПУБЛИЧНЫЙ ДОКЛАД 2021-2022</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Договоры</div>
+									<a href="#!" class="docs-content__doc-link">Договор № 180 о&#160;стратегическом партнерстве</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Договор о&#160;сотрудничестве № 177 в&#160;сфере подготовки кадров для предприятий Приморского края</a
+									>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Отчеты</div>
+									<a href="#!" class="docs-content__doc-link">Отчет о&#160;результатах самообследования 2021&#160;г.</a>
+									<a href="#!" class="docs-content__doc-link">Отчет о&#160;результатах самообследования 2022&#160;г.</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Паспорт дорожной безопасности</div>
+									<a href="#!" class="docs-content__doc-link">Паспорт дорожной безопасности</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Постановления</div>
+									<a href="#!" class="docs-content__doc-link">Постановление Правительства Приморского края от&#160;03.09.2021&#160;г. № 581-пп</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Локально-нормативные акты</div>
+									<a href="#!" class="docs-content__doc-link">Документы о&#160;порядке оказания платных образовательных услуг</a>
+									<a href="#!" class="docs-content__doc-link">Сведения о&#160;результатах проведения специальной оценки условий труда</a>
+									<a href="#!" class="docs-content__doc-link">Локальные нормативные акты (не&#160;вошедшие в&#160;основной перечень)</a>
+									<a href="#!" class="docs-content__doc-link">Рабочие программы воспитания</a>
+									<a href="#!" class="docs-content__doc-link"
+										>Информация о&#160;рассчитываемой среднемесячной заработной плате руководителей, из&#160;заместителей и&#160;глвных бухгалтеров</a
+									>
+									<a href="#!" class="docs-content__doc-link">Список классных руководителей на&#160;2022-2023 учебный год</a>
+								</div>
+								<div class="docs-content__doc">
+									<div class="docs-content__doc-title">Предписания гос. органов</div>
+									<a href="#!" class="docs-content__doc-link">Предписания госорганов</a>
+								</div>
+								<div class="docs-content__doc">
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;внутренней системе оценки качества образования</a>
+									<a href="#!" class="docs-content__doc-link">Положение о&#160;электронной информационно-образовательной среде</a>
+									<a href="#!" class="docs-content__doc-link">Результаты опроса обучающихся об&#160;удовлетворенности</a>
+									<a href="#!" class="docs-content__doc-link">Результаты опроса рабодателей об&#160;удовлетворенности</a>
+									<a href="#!" class="docs-content__doc-link">Результаты опроса преподавателей об&#160;удовлетворенности</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer class="footer">
+					<div class="container">
+						<nav class="footer__nav footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-logo">
+										<img src="./img/logo-light.svg" alt="" />
+									</div>
+								</li>
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-title">Общая информация</div>
+									<ul class="footer-menu__item-list">
+										<li class="footer-menu__item-item"><a href="#!">Вакатные места для приема (перевод)</a></li>
+										<li class="footer-menu__item-item"><a href="#!">Открытые вакансии</a></li>
+										<li class="footer-menu__item-item"><a href="#!">Партнеры</a></li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-title">Связь</div>
+									<ul class="footer-menu__item-list">
+										<li class="footer-menu__item-item"><a href="#!">8 (4234) 32-11-44</a></li>
+										<li class="footer-menu__item-item"><a href="#!">Электронные обращения</a></li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-title">Адрес</div>
+									<ul class="footer-menu__item-list">
+										<li class="footer-menu__item-item">692519, г.&#160;Уссурийск, ул.&#160;Советская 35</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-title">Образование</div>
+									<ul class="footer-menu__item-list">
+										<li class="footer-menu__item-item"><a href="#!">Дистанционное образование Moodle</a></li>
+										<li class="footer-menu__item-item"><a href="#!">Портал сетевой город</a></li>
+										<li class="footer-menu__item-item"><a href="#!">WorldSkills</a></li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<div class="footer-menu__item-title">Мы&#160;также в</div>
+									<ul class="footer-menu__item-list _socials">
+										<li class="footer-menu__item-item">
+											<a href="#!">
+												<svg class="icon _footer wk">
+													<use href="./img/svgsprite/sprite.symbol.svg#wk"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="footer-menu__item-item">
+											<a href="#!">
+												<svg class="icon _footer telegram">
+													<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="footer-menu__item-item">
+											<a href="#!">
+												<svg class="icon _footer youtube">
+													<use href="./img/svgsprite/sprite.symbol.svg#youtube"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__copyright">
+							<div class="footer__copyright-text">&#169; 2023 КГА ПОУ &#171;ДВТК&#187;.</div>
+							<div class="footer__copyright-text"><img src="./img/heart.svg" alt="" /></div>
+							<div class="footer__copyright-text">dvtk.info</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

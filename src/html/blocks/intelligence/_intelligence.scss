@@ -1,0 +1,33 @@
+.page {
+  &__intelligence {
+  }
+  &__container {
+  }
+}
+.intelligence {
+	padding-top: 30px;
+  &__title {
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    // display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 100%;
+    border-radius: 12px;
+    padding: 50px;
+  }
+  &__item-title {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  &__item-desc {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-text);
+  }
+}

@@ -1,0 +1,133 @@
+.sidebar {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  position: relative;
+  width: 120px;
+  height: 100%;
+  background-color: #081028;
+  z-index: 80;
+
+  &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  &__nav-btn {
+    @media screen and (min-width: 1201px) {
+      &._header {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 635px) {
+      min-width: 90px;
+      height: 80px;
+    }
+    position: relative;
+    border-bottom: 2px solid #0b1739;
+    min-width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--foreground);
+  }
+  &__nav {
+  }
+}
+
+.burger-menu {
+  position: relative;
+}
+
+.sidebar-menu {
+  &__list {
+  }
+  &__item {
+    position: relative;
+		transition: all 0.3s ease;
+			
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 100;
+      display: block;
+			width: auto;
+      padding: 12px 8px;
+      visibility: hidden;
+
+      font-weight: 400;
+      font-size: 14px;
+      color: white;
+			white-space: nowrap;
+			transform: translate(30px, -50%);
+
+      background: var(--accent);
+      border-radius: 5px;
+      opacity: 0;
+      transition: all 0.3s ease;
+			pointer-events: none;
+
+      &::before {
+        content: "";
+        border: solid transparent;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        border-right-color: var(--accent);
+        border-width: 9px;
+        margin-top: -1px;
+        transform: translate(0px, -50%);
+      }
+    }
+
+		&:hover span {
+			opacity: 1;
+			visibility: visible;
+		}
+  }
+  &__link {
+    display: block;
+    padding: 30px 46px;
+    &._active {
+      background: #0b1739;
+      & > * {
+        fill: var(--accent);
+      }
+    }
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0b1739;
+      & > .icon._nav {
+        fill: var(--accent);
+      }
+    }
+  }
+}
+
+.triangle-menu {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 635px) {
+    right: 10px;
+  }
+
+  &._active > svg {
+    transform: scale(-1, 1) translate(0, -50%);
+  }
+
+  &._active {
+  }
+}

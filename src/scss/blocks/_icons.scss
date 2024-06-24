@@ -1,0 +1,93 @@
+.icons-wrapper {
+  padding: 30px 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  transition: all 0.3s ease;
+
+  &._nav {
+    min-width: 28px;
+    max-width: 28px;
+    height: 28px;
+    fill: #a0abbf;
+  }
+
+	&.arrow-menu-nav {
+		width: 25px;
+		height: 25px;
+		stroke: var(--text-light);
+	}
+
+  &._footer {
+    width: 18px;
+    height: 18px;
+    fill: #a0abbf;
+    transition: all 0.3s ease;
+
+    &:hover {
+      fill: var(--accent);
+    }
+  }
+
+  &.arrow {
+    width: 15px;
+    height: 15px;
+    stroke: var(--accent);
+  }
+
+  &._header-icons {
+    min-width: 36px;
+    max-width: 36px;
+    height: 36px;
+    fill: #a0abbf;
+		
+		@media screen and (max-width: 635px) {
+			min-width: 28px;
+			max-width: 28px;
+			height: 28px;
+		}
+
+    &.search-ico {
+      fill: transparent;
+      stroke: #a0abbf;
+    }
+    &.phone-call {
+      fill: #a0abbf;
+      stroke: #a0abbf;
+    }
+  }
+
+  &._active {
+    fill: var(--accent);
+  }
+}
+
+.triangle-menu {
+  width: 10px;
+  height: 10px;
+  fill: var(--accent);
+	@media screen and (max-width: 635px) {
+		width: 8px;
+		height: 8px;
+	}
+}
+
+.burger-menu {
+  width: 50px;
+  height: 25px;
+  stroke: #fff;
+	@media screen and (max-width: 635px) {
+		width: 35px;
+		height: 20px;
+	}
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}

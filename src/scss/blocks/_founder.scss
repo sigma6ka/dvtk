@@ -1,0 +1,22 @@
+.page {
+  &__founder {
+  }
+  &__container {
+  }
+}
+.founder {
+  &__title {
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    & > a {
+      font-style: italic;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--accent);
+    }
+  }
+}

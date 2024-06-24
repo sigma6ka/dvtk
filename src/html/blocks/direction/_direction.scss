@@ -1,0 +1,128 @@
+.page {
+  &__direction {
+  }
+  &__container {
+  }
+}
+.direction {
+  &__title {
+  }
+  &__accordions {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: repeat(2, minmax(335px, 1fr));
+		align-items: start;
+		
+		@media screen and (max-width: 1135px) {
+			grid-template-columns: repeat(1, minmax(335px, 1fr));
+		}
+  }
+  &__accordion {
+    padding: 30px;
+    border-radius: 14px;
+
+		&._active {
+			border: 2px solid var(--accent);
+		}
+  }
+  &__accordion-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		gap: 10px;
+    cursor: pointer;
+  }
+  &__accordion-btn-text {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__accordion-btn-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 35px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &._active {
+      background-color: var(--accent);
+      & > * {
+        transform: rotate(90deg);
+        stroke: var(--background);
+      }
+    }
+  }
+  &__accordion-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+    & > *:not(:last-child) {
+      padding-bottom: 35px;
+    }
+
+    &._active {
+      margin-top: 20px;
+    }
+  }
+}
+
+.direction-accordion-content {
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__person-avatar {
+    & > * > * {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  &__person-box {
+    & > *:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+  &__person-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__person-direction {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text);
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  &__list {
+    & > ul li {
+      display: list-item;
+      list-style: decimal;
+      list-style-position: inside;
+    }
+  }
+  &__list-title {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  &__list-numeric {
+  }
+
+  &__btn {
+		@media screen and (max-width: 1135px) {
+			opacity: 1;
+		}
+  }
+}

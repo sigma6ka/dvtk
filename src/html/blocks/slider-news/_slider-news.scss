@@ -1,0 +1,139 @@
+.page {
+	&__slider-news {
+	}
+	&__container {
+	}
+}
+.slider-news {
+	&__title-box {
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+	}
+	&__title {
+		margin-bottom: 0;
+	}
+	&__btns {
+		display: flex;
+    gap: 20px;
+    @media screen and (max-width: 555px) {
+      &._title-btns {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 477px) {
+      &._title-btns {
+        display: flex;
+      }
+      display: none;
+    }
+	}
+	&__btn {
+		border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+    }
+
+    & > svg.arrow {
+      stroke: var(--text-dark);
+    }
+	}
+	&__swiper {
+		overflow: visible !important;
+    width: 100% !important;
+    margin-bottom: 30px;
+	}
+	&__wrapper {
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__all-news {
+		display: flex;
+		align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-dark);
+		gap: 10px;
+
+		& > svg {
+			width: 19px;
+			height: 19px;
+			stroke: var(--text-dark);
+		}
+
+		@media screen and (min-width: 901px) {
+			transition: all 0.3s ease;
+			&:hover {
+				color: var(--accent);
+				gap: 20px;
+	
+				& > svg {
+					stroke: var(--accent);
+				}
+			}
+		}
+	}
+}
+
+.figure-title {
+}
+.swiper-button-prev-news {
+}
+.icon {
+}
+.arrow {
+}
+.swiper-button-prev-news {
+	transform: rotate(-180deg);
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.news-card {
+	&__item {
+	}
+	&__item-img {
+	}
+	&__item-box {
+	}
+	&__item-title {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+						line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+	&__item-desc {
+	}
+	&__item-info {
+	}
+	&__item-info-ico {
+	}
+	&__item-info-box {
+	}
+	&__item-info-title {
+	}
+	&__item-info-date {
+	}
+}
+.card {
+}
+.star {
+}
+.arrow-right {
+}

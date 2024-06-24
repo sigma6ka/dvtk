@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сведения об организации</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  </head>
+
+  <body class="intelligence-page">
+    <div class="layout">
+      <div class="sidebar-navigation">
+        @@include('blocks/aside/aside.html')
+      </div>
+      <div class="wrapper">
+        @@include('blocks/header/header.html')
+        <main class="page">
+          @@include('blocks/intelligence/intelligence-cards.html')
+          <section class="page__founder founder">
+            <div class="page__container">
+              <h2 class="founder__title _title-2">
+								<div class="figure-title"></div>
+								<div>Учредитель образовательной организации:</div>
+							</h2>
+              <div class="founder__desc">
+                Учредителем (собственником имущества) Учреждения является
+                Приморский край.‌‌ От имени Приморского края функции и
+                полномочия учредителя (собственника имущества) Учреждения в
+                пределах своей компетенции осуществляют Правительство
+                Приморского края, отраслевой орган исполнительной власти
+                Приморского края, Министерство имущественных и земельных
+                отношений Приморского края.‌‌Учреждение находится в ведении
+                Министерства профессионального образования и занятости населения
+                Приморского края.‌‌Сайт
+                <a href="#!">
+									Министерства профессионального образования и занятости
+                  населения Приморского края
+                </a>
+              </div>
+            </div>
+          </section>
+          @@include('blocks/contacts/contacts.html')
+        </main>
+        @@include('blocks/footer/footer.html')
+      </div>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
